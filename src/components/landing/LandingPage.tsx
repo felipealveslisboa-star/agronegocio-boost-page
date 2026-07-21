@@ -2,13 +2,13 @@ import { lazy, Suspense } from "react";
 
 const heroImg = "/images/hero-agro.jpg";
 const factoryImg = "/images/factory.jpg";
-const discosImg = "/images/placeholder.jpg"; // Arquivo temporário: substituir pela imagem real quando disponível.
-const rosetasImg = "/images/placeholder.jpg"; // Arquivo temporário: substituir pela imagem real quando disponível.
-const bicosImg = "/images/placeholder.jpg"; // Arquivo temporário: substituir pela imagem real quando disponível.
-const caposImg = "/images/placeholder.jpg"; // Arquivo temporário: substituir pela imagem real quando disponível.
-const outrasImg = "/images/placeholder.jpg"; // Arquivo temporário: substituir pela imagem real quando disponível.
-const logoImg = "/images/logo-boa-safra.png"; // Arquivo temporário: substituir pelo logo real quando o arquivo final for enviado.
-const catalogUrl = "/catalogo/catalogo-boa-safra.pdf"; // Arquivo temporário: substituir pelo PDF final quando o arquivo for enviado.
+const discosImg = "/images/discos.jpg";
+const rosetasImg = "/images/rosetas.jpg";
+const bicosImg = "/images/bicos.jpg";
+const caposImg = "/images/capos.jpg";
+const outrasImg = "/images/outras.png";
+const logoImg = "/images/logo-boa-safra.png";
+const catalogUrl = "/catalogo/catalogo-boa-safra.pdf";
 import {
   Truck,
   Globe2,
