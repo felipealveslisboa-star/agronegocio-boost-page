@@ -89,16 +89,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content:
           "peças agrícolas, discos de plantio, rosetas, bicos colheitadeira, capôs colheitadeira, peças John Deere, peças Semeato, peças Jumil, peças Horsch, peças Baldan, peças Tatu, indústria de implementos agrícolas, peças para plantadeiras",
       },
-      { property: "og:title", content: "Boa Safra — Peças Agrícolas de Alta Performance" },
+      { property: "og:title", content: "Boa Safra — Indústria de Peças Agrícolas | Discos, Rosetas, Bicos e Capôs" },
       {
         property: "og:description",
         content:
-          "Peças de reposição com qualidade industrial para plantadeiras e colheitadeiras. Entrega para todo o Brasil e América do Sul.",
+          "Fábrica de peças de reposição para máquinas agrícolas: discos de plantio, rosetas, bicos e capôs. Compatíveis com John Deere, Semeato, Jumil, Horsch, Baldan e Tatu. Orçamento pelo WhatsApp.",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Boa Safra Indústria" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#2E7D32" },
+      { name: "twitter:title", content: "Boa Safra — Indústria de Peças Agrícolas | Discos, Rosetas, Bicos e Capôs" },
+      { name: "twitter:description", content: "Fábrica de peças de reposição para máquinas agrícolas: discos de plantio, rosetas, bicos e capôs. Compatíveis com John Deere, Semeato, Jumil, Horsch, Baldan e Tatu. Orçamento pelo WhatsApp." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/e21d6c08-d4ea-478d-aebf-b4f191a8cb1c" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/e21d6c08-d4ea-478d-aebf-b4f191a8cb1c" },
     ],
     links: [
       {
