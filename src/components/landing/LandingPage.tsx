@@ -605,16 +605,14 @@ function Footer() {
     <footer id="contato" className="bg-[oklch(0.16_0.04_150)] text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_1fr_1.2fr] lg:px-8">
         <div>
-          <div className="flex items-center gap-2.5">
-            <span className="grid h-10 w-10 place-items-center rounded-lg gradient-brand shadow-soft">
-              <Sparkles className="h-5 w-5" aria-hidden />
-            </span>
-            <div className="leading-tight">
-              <p className="font-display text-lg font-extrabold">Boa Safra</p>
-              <p className="text-[10px] font-medium uppercase tracking-[0.14em] text-white/60">
-                Indústria de Implementos Agrícolas
-              </p>
-            </div>
+          <div className="inline-flex items-center rounded-2xl bg-white px-4 py-3 shadow-soft">
+            <img
+              src={logoImg}
+              alt="Boa Safra Indústria"
+              width={180}
+              height={60}
+              className="h-12 w-auto"
+            />
           </div>
           <p className="mt-5 max-w-sm text-sm text-white/70">
             Fábrica brasileira de peças de reposição para plantadeiras e colheitadeiras.
