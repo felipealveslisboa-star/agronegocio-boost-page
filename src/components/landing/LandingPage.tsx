@@ -1,11 +1,17 @@
 import { lazy, Suspense } from "react";
 import heroImg from "@/assets/hero-agro.jpg";
-import discosImg from "@/assets/product-discos.jpg";
-import rosetasImg from "@/assets/product-rosetas.jpg";
-import bicosImg from "@/assets/product-bicos.jpg";
-import caposImg from "@/assets/product-capos.jpg";
-import outrasImg from "@/assets/product-outras.jpg";
+import discosAsset from "@/assets/product-discos.jpg.asset.json";
+import rosetasAsset from "@/assets/product-rosetas.jpg.asset.json";
+import bicosAsset from "@/assets/product-bicos.jpg.asset.json";
+import caposAsset from "@/assets/product-capos.jpg.asset.json";
+import outrasAsset from "@/assets/product-outras.png.asset.json";
 import factoryImg from "@/assets/factory.jpg";
+
+const discosImg = discosAsset.url;
+const rosetasImg = rosetasAsset.url;
+const bicosImg = bicosAsset.url;
+const caposImg = caposAsset.url;
+const outrasImg = outrasAsset.url;
 import {
   Truck,
   Globe2,
