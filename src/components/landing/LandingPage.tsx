@@ -664,6 +664,7 @@ export function LandingPage() {
       <Hero />
       <Stats />
       <Products />
+      <InstitutionalVideo />
       <Differentials />
       <Brands />
       <Process />
