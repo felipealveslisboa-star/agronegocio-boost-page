@@ -1,18 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": ".output/public"
-      }
-    },
-    {
-      "src": "api/render.mjs",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
       "src": "^/(.*\\.(js|css|png|jpg|jpeg|svg|ico|json|txt|pdf|webmanifest|woff2|woff|ttf))$",
