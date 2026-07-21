@@ -339,6 +339,47 @@ function Products() {
               </div>
             </article>
           ))}
+          <article className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-card transition-all hover:-translate-y-1 hover:shadow-soft sm:col-span-2 lg:col-span-3 lg:flex-row">
+            <div className="relative flex items-center justify-center overflow-hidden gradient-brand p-10 lg:w-1/2">
+              <div className="relative z-10 flex flex-col items-center text-primary-foreground">
+                <span className="grid h-20 w-20 place-items-center rounded-2xl bg-white/15 backdrop-blur">
+                  <BookOpen className="h-10 w-10" aria-hidden />
+                </span>
+                <p className="mt-5 font-display text-sm font-bold uppercase tracking-[0.18em] text-white/80">
+                  Catálogo 2025
+                </p>
+                <p className="mt-2 text-center font-display text-2xl font-extrabold">
+                  Toda a linha Boa Safra em um só arquivo
+                </p>
+              </div>
+              <div
+                aria-hidden
+                className="absolute inset-0 opacity-25"
+                style={{
+                  backgroundImage:
+                    "radial-gradient(circle at 20% 30%, rgba(255,255,255,0.4), transparent 45%), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.3), transparent 45%)",
+                }}
+              />
+            </div>
+            <div className="flex flex-1 flex-col p-7 lg:p-10">
+              <h3 className="font-display text-xl font-bold text-foreground sm:text-2xl">
+                Veja nosso Catálogo Completo
+              </h3>
+              <p className="mt-3 flex-1 text-sm text-muted-foreground sm:text-base">
+                Conheça nossa linha completa de produtos e encontre a peça ideal para sua necessidade.
+              </p>
+              <a
+                href={catalogUrl}
+                target="_blank"
+                rel="noopener"
+                download
+                className="mt-6 inline-flex w-fit items-center gap-2 rounded-full gradient-brand px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:scale-[1.02]"
+              >
+                <Download className="h-4 w-4" aria-hidden />
+                Baixar Catálogo
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
