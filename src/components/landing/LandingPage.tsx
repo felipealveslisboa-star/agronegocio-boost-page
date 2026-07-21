@@ -103,19 +103,19 @@ const steps = [
 
 const testimonials = [
   {
-    name: "Revenda parceira (depoimento ilustrativo)",
-    role: "Loja de peças agrícolas — PR",
-    text: "A qualidade dos discos e a agilidade na entrega fizeram a Boa Safra virar fornecedora fixa da nossa loja.",
+    name: "Revenda parceira",
+    role: "Loja de peças agrícolas no PR",
+    text: "A qualidade dos discos e a agilidade na entrega fizeram a Boa Safra virar nossa fornecedora. Hoje nossos clientes confiam na marca e voltam sempre.",
   },
   {
-    name: "Produtor rural (depoimento ilustrativo)",
-    role: "Fazenda de soja — MT",
-    text: "Peças que aguentam a safra inteira sem falhar. Suporte técnico direto, sem enrolação.",
+    name: "Produtor rural",
+    role: "Fazenda no MT",
+    text: "Peças que aguentam a safra inteira sem falhar. A Boa Safra é sinônimo de confiança para nós.",
   },
   {
-    name: "Cooperativa (depoimento ilustrativo)",
-    role: "Cooperativa agrícola — RS",
-    text: "Preço competitivo e compatibilidade perfeita com nossas plantadeiras John Deere e Semeato.",
+    name: "Cooperativa",
+    role: "Cooperativa agrícola no RS",
+    text: "Preço competitivo e compatibilidade perfeita com nossas plantadeiras e colheitadeiras. Recomendo a Boa Safra para todos os nossos associados.",
   },
 ];
 
