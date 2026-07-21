@@ -37,7 +37,7 @@ import {
 } from "lucide-react";
 
 const WHATSAPP_URL =
-  "https://wa.me/554532230013?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20pe%C3%A7as%20agr%C3%ADcolas.";
+  "https://wa.me/5545999663167?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20pe%C3%A7as%20agr%C3%ADcolas.";
 
 const products = [
   {
