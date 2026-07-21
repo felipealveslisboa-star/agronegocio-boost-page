@@ -687,3 +687,5 @@ export default LandingPage;
 void lazy;
 void Suspense;
 void Mail;
+void Ruler;
+void BookOpen;
