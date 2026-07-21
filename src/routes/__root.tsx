@@ -101,8 +101,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "theme-color", content: "#2E7D32" },
       { name: "twitter:title", content: "Boa Safra — Indústria de Peças Agrícolas | Discos, Rosetas, Bicos e Capôs" },
       { name: "twitter:description", content: "Fábrica de peças de reposição para máquinas agrícolas: discos de plantio, rosetas, bicos e capôs. Compatíveis com John Deere, Semeato, Jumil, Horsch, Baldan e Tatu. Orçamento pelo WhatsApp." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/e21d6c08-d4ea-478d-aebf-b4f191a8cb1c" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/e21d6c08-d4ea-478d-aebf-b4f191a8cb1c" },
+      { property: "og:image", content: "/images/logo-boa-safra.png" },
+      { name: "twitter:image", content: "/images/logo-boa-safra.png" },
     ],
     links: [
       {
