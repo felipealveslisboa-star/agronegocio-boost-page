@@ -19,7 +19,11 @@ export default async function handler(req, res) {
     body: await readRequestBody(req),
   });
 
-  const response = await server.fetch(request, {}, {});
+  const context = {
+    waitUntil: () => {},
+  };
+
+  const response = await server.fetch(request, {}, context);
   const rawHeaders = response.headers.raw ? response.headers.raw() : {};
 
   for (const [name, value] of Object.entries(rawHeaders)) {
