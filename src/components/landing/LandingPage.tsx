@@ -6,12 +6,16 @@ import bicosAsset from "@/assets/product-bicos.jpg.asset.json";
 import caposAsset from "@/assets/product-capos.jpg.asset.json";
 import outrasAsset from "@/assets/product-outras.png.asset.json";
 import factoryImg from "@/assets/factory.jpg";
+import logoAsset from "@/assets/logo-boa-safra.png.asset.json";
+import catalogAsset from "@/assets/catalogo-boa-safra.pdf.asset.json";
 
 const discosImg = discosAsset.url;
 const rosetasImg = rosetasAsset.url;
 const bicosImg = bicosAsset.url;
 const caposImg = caposAsset.url;
 const outrasImg = outrasAsset.url;
+const logoImg = logoAsset.url;
+const catalogUrl = catalogAsset.url;
 import {
   Truck,
   Globe2,
@@ -35,6 +39,8 @@ import {
   Send,
   Quote,
   Star,
+  Download,
+  BookOpen,
 } from "lucide-react";
 
 const WHATSAPP_URL =
@@ -87,10 +93,9 @@ const stats = [
 ];
 
 const differentials = [
-  { icon: ShieldCheck, title: "Alta resistência", desc: "Aço tratado para suportar as condições mais exigentes do campo." },
-  { icon: Ruler, title: "Precisão de fabricação", desc: "Usinagem CNC com controle rigoroso de tolerâncias." },
+  { icon: ShieldCheck, title: "Alta resistência", desc: "Produzidos com materiais de alta performance para entregar máxima durabilidade." },
   { icon: Sparkles, title: "Matéria-prima selecionada", desc: "Fornecedores homologados e rastreabilidade total." },
-  { icon: Cog, title: "Excelente acabamento", desc: "Pintura industrial e tratamento anticorrosivo." },
+  { icon: Cog, title: "Excelente acabamento", desc: "Resistente ao desbotamento e ao ressecamento causado pelo sol." },
   { icon: Wrench, title: "Compatibilidade ampla", desc: "Encaixe perfeito com as principais marcas do mercado." },
   { icon: Headphones, title: "Suporte técnico", desc: "Ajudamos na identificação da peça certa para sua máquina." },
   { icon: Zap, title: "Entrega rápida", desc: "Estoque e produção ágil para não parar a sua colheita." },
