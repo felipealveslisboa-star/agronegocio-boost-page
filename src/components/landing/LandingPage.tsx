@@ -6,12 +6,16 @@ import bicosAsset from "@/assets/product-bicos.jpg.asset.json";
 import caposAsset from "@/assets/product-capos.jpg.asset.json";
 import outrasAsset from "@/assets/product-outras.png.asset.json";
 import factoryImg from "@/assets/factory.jpg";
+import logoAsset from "@/assets/logo-boa-safra.png.asset.json";
+import catalogAsset from "@/assets/catalogo-boa-safra.pdf.asset.json";
 
 const discosImg = discosAsset.url;
 const rosetasImg = rosetasAsset.url;
 const bicosImg = bicosAsset.url;
 const caposImg = caposAsset.url;
 const outrasImg = outrasAsset.url;
+const logoImg = logoAsset.url;
+const catalogUrl = catalogAsset.url;
 import {
   Truck,
   Globe2,
@@ -35,6 +39,8 @@ import {
   Send,
   Quote,
   Star,
+  Download,
+  BookOpen,
 } from "lucide-react";
 
 const WHATSAPP_URL =
@@ -87,10 +93,9 @@ const stats = [
 ];
 
 const differentials = [
-  { icon: ShieldCheck, title: "Alta resistência", desc: "Aço tratado para suportar as condições mais exigentes do campo." },
-  { icon: Ruler, title: "Precisão de fabricação", desc: "Usinagem CNC com controle rigoroso de tolerâncias." },
+  { icon: ShieldCheck, title: "Alta resistência", desc: "Produzidos com materiais de alta performance para entregar máxima durabilidade." },
   { icon: Sparkles, title: "Matéria-prima selecionada", desc: "Fornecedores homologados e rastreabilidade total." },
-  { icon: Cog, title: "Excelente acabamento", desc: "Pintura industrial e tratamento anticorrosivo." },
+  { icon: Cog, title: "Excelente acabamento", desc: "Resistente ao desbotamento e ao ressecamento causado pelo sol." },
   { icon: Wrench, title: "Compatibilidade ampla", desc: "Encaixe perfeito com as principais marcas do mercado." },
   { icon: Headphones, title: "Suporte técnico", desc: "Ajudamos na identificação da peça certa para sua máquina." },
   { icon: Zap, title: "Entrega rápida", desc: "Estoque e produção ágil para não parar a sua colheita." },
@@ -126,15 +131,13 @@ function Header() {
     <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/85 backdrop-blur-lg">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="#top" className="flex items-center gap-2.5" aria-label="Boa Safra Indústria — início">
-          <span className="grid h-9 w-9 place-items-center rounded-lg gradient-brand text-primary-foreground shadow-soft">
-            <Sparkles className="h-5 w-5" aria-hidden />
-          </span>
-          <span className="flex flex-col leading-tight">
-            <span className="font-display text-base font-extrabold tracking-tight text-foreground">Boa Safra</span>
-            <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-muted-foreground">
-              Indústria Agrícola
-            </span>
-          </span>
+          <img
+            src={logoImg}
+            alt="Boa Safra Indústria"
+            width={160}
+            height={48}
+            className="h-10 w-auto sm:h-11"
+          />
         </a>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Menu principal">
           {[
@@ -336,6 +339,47 @@ function Products() {
               </div>
             </article>
           ))}
+          <article className="group flex flex-col overflow-hidden rounded-3xl border border-border bg-card shadow-card transition-all hover:-translate-y-1 hover:shadow-soft sm:col-span-2 lg:col-span-3 lg:flex-row">
+            <div className="relative flex items-center justify-center overflow-hidden gradient-brand p-10 lg:w-1/2">
+              <div className="relative z-10 flex flex-col items-center text-primary-foreground">
+                <span className="grid h-20 w-20 place-items-center rounded-2xl bg-white/15 backdrop-blur">
+                  <BookOpen className="h-10 w-10" aria-hidden />
+                </span>
+                <p className="mt-5 font-display text-sm font-bold uppercase tracking-[0.18em] text-white/80">
+                  Catálogo 2025
+                </p>
+                <p className="mt-2 text-center font-display text-2xl font-extrabold">
+                  Toda a linha Boa Safra em um só arquivo
+                </p>
+              </div>
+              <div
+                aria-hidden
+                className="absolute inset-0 opacity-25"
+                style={{
+                  backgroundImage:
+                    "radial-gradient(circle at 20% 30%, rgba(255,255,255,0.4), transparent 45%), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.3), transparent 45%)",
+                }}
+              />
+            </div>
+            <div className="flex flex-1 flex-col p-7 lg:p-10">
+              <h3 className="font-display text-xl font-bold text-foreground sm:text-2xl">
+                Veja nosso Catálogo Completo
+              </h3>
+              <p className="mt-3 flex-1 text-sm text-muted-foreground sm:text-base">
+                Conheça nossa linha completa de produtos e encontre a peça ideal para sua necessidade.
+              </p>
+              <a
+                href={catalogUrl}
+                target="_blank"
+                rel="noopener"
+                download
+                className="mt-6 inline-flex w-fit items-center gap-2 rounded-full gradient-brand px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:scale-[1.02]"
+              >
+                <Download className="h-4 w-4" aria-hidden />
+                Baixar Catálogo
+              </a>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -561,16 +605,14 @@ function Footer() {
     <footer id="contato" className="bg-[oklch(0.16_0.04_150)] text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.1fr_1fr_1.2fr] lg:px-8">
         <div>
-          <div className="flex items-center gap-2.5">
-            <span className="grid h-10 w-10 place-items-center rounded-lg gradient-brand shadow-soft">
-              <Sparkles className="h-5 w-5" aria-hidden />
-            </span>
-            <div className="leading-tight">
-              <p className="font-display text-lg font-extrabold">Boa Safra</p>
-              <p className="text-[10px] font-medium uppercase tracking-[0.14em] text-white/60">
-                Indústria de Implementos Agrícolas
-              </p>
-            </div>
+          <div className="inline-flex items-center rounded-2xl bg-white px-4 py-3 shadow-soft">
+            <img
+              src={logoImg}
+              alt="Boa Safra Indústria"
+              width={180}
+              height={60}
+              className="h-12 w-auto"
+            />
           </div>
           <p className="mt-5 max-w-sm text-sm text-white/70">
             Fábrica brasileira de peças de reposição para plantadeiras e colheitadeiras.
@@ -682,3 +724,5 @@ export default LandingPage;
 void lazy;
 void Suspense;
 void Mail;
+void Ruler;
+void BookOpen;
