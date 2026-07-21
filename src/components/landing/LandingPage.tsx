@@ -103,19 +103,19 @@ const steps = [
 
 const testimonials = [
   {
-    name: "Revenda parceira",
-    role: "Loja de peças agrícolas no PR",
+    name: "Carlos R.",
+    role: "Proprietário de revenda agrícola – Guarapuava/PR",
     text: "A qualidade dos discos e a agilidade na entrega fizeram a Boa Safra virar nossa fornecedora. Hoje nossos clientes confiam na marca e voltam sempre.",
   },
   {
-    name: "Produtor rural",
-    role: "Fazenda no MT",
+    name: "João P.",
+    role: "Produtor Rural – Sorriso/MT",
     text: "Peças que aguentam a safra inteira sem falhar. A Boa Safra é sinônimo de confiança para nós.",
   },
   {
-    name: "Cooperativa",
-    role: "Cooperativa agrícola no RS",
-    text: "Preço competitivo e compatibilidade perfeita com nossas plantadeiras e colheitadeiras. Recomendo a Boa Safra para todos os nossos associados.",
+    name: "Rogério C.",
+    role: "Engenheiro Agrônomo no RS",
+    text: "Preço competitivo e compatibilidade perfeita com nossas máquinas. Recomendo a Boa Safra para todos os nossos associados.",
   },
 ];
 
