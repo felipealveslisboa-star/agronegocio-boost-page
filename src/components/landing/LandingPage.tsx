@@ -1,21 +1,14 @@
 import { lazy, Suspense } from "react";
-import heroImg from "@/assets/hero-agro.jpg";
-import discosAsset from "@/assets/product-discos.jpg.asset.json";
-import rosetasAsset from "@/assets/product-rosetas.jpg.asset.json";
-import bicosAsset from "@/assets/product-bicos.jpg.asset.json";
-import caposAsset from "@/assets/product-capos.jpg.asset.json";
-import outrasAsset from "@/assets/product-outras.png.asset.json";
-import factoryImg from "@/assets/factory.jpg";
-import logoAsset from "@/assets/logo-boa-safra.png.asset.json";
-import catalogAsset from "@/assets/catalogo-boa-safra.pdf.asset.json";
 
-const discosImg = discosAsset.url;
-const rosetasImg = rosetasAsset.url;
-const bicosImg = bicosAsset.url;
-const caposImg = caposAsset.url;
-const outrasImg = outrasAsset.url;
-const logoImg = logoAsset.url;
-const catalogUrl = catalogAsset.url;
+const heroImg = "/images/hero-agro.jpg";
+const factoryImg = "/images/factory.jpg";
+const discosImg = "/images/placeholder.jpg"; // Arquivo temporário: substituir pela imagem real quando disponível.
+const rosetasImg = "/images/placeholder.jpg"; // Arquivo temporário: substituir pela imagem real quando disponível.
+const bicosImg = "/images/placeholder.jpg"; // Arquivo temporário: substituir pela imagem real quando disponível.
+const caposImg = "/images/placeholder.jpg"; // Arquivo temporário: substituir pela imagem real quando disponível.
+const outrasImg = "/images/placeholder.jpg"; // Arquivo temporário: substituir pela imagem real quando disponível.
+const logoImg = "/images/logo-boa-safra.png"; // Arquivo temporário: substituir pelo logo real quando o arquivo final for enviado.
+const catalogUrl = "/catalogo/catalogo-boa-safra.pdf"; // Arquivo temporário: substituir pelo PDF final quando o arquivo for enviado.
 import {
   Truck,
   Globe2,
