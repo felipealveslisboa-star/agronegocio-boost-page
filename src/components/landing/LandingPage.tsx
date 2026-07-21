@@ -105,7 +105,7 @@ const testimonials = [
   {
     name: "Carlos R.",
     role: "Proprietário de revenda agrícola – Guarapuava/PR",
-    text: "A qualidade dos discos e a agilidade na entrega fizeram a Boa Safra virar nossa fornecedora. Hoje nossos clientes confiam na marca e voltam sempre.",
+    text: "A qualidade dos discos e a agilidade na entrega fizeram a Boa Safra virar nossa principal fornecedora. Hoje nossos clientes confiam na marca e voltam sempre.",
   },
   {
     name: "João P.",
@@ -115,7 +115,7 @@ const testimonials = [
   {
     name: "Rogério C.",
     role: "Engenheiro Agrônomo no RS",
-    text: "Preço competitivo e compatibilidade perfeita com nossas máquinas. Recomendo a Boa Safra para todos os nossos associados.",
+    text: "A Boa Safra entrega qualidade e compatibilidade com as principais máquinas do mercado. É uma marca que recomendamos com confiança.",
   },
 ];
 
