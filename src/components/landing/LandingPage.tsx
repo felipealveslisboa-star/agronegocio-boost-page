@@ -1,11 +1,17 @@
 import { lazy, Suspense } from "react";
 import heroImg from "@/assets/hero-agro.jpg";
-import discosImg from "@/assets/product-discos.jpg";
-import rosetasImg from "@/assets/product-rosetas.jpg";
-import bicosImg from "@/assets/product-bicos.jpg";
-import caposImg from "@/assets/product-capos.jpg";
-import outrasImg from "@/assets/product-outras.jpg";
+import discosAsset from "@/assets/product-discos.jpg.asset.json";
+import rosetasAsset from "@/assets/product-rosetas.jpg.asset.json";
+import bicosAsset from "@/assets/product-bicos.jpg.asset.json";
+import caposAsset from "@/assets/product-capos.jpg.asset.json";
+import outrasAsset from "@/assets/product-outras.png.asset.json";
 import factoryImg from "@/assets/factory.jpg";
+
+const discosImg = discosAsset.url;
+const rosetasImg = rosetasAsset.url;
+const bicosImg = bicosAsset.url;
+const caposImg = caposAsset.url;
+const outrasImg = outrasAsset.url;
 import {
   Truck,
   Globe2,
@@ -51,7 +57,7 @@ const products = [
     desc: "Bicos usinados com acabamento superior, compatíveis com as principais colheitadeiras do mercado.",
   },
   {
-    name: "Capôs para Colheitadeiras",
+    name: "Capô para Colheitadeiras",
     img: caposImg,
     desc: "Capôs resistentes com pintura industrial, projetados para longa vida útil mesmo em condições severas.",
   },
@@ -212,7 +218,7 @@ function Hero() {
           <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-white/15 pt-6 text-white">
             {[
               ["4", "Países atendidos"],
-              ["+5", "Linhas de produtos"],
+              ["+3000", "Produtos"],
               ["100%", "Fabricação nacional"],
             ].map(([n, l]) => (
               <div key={l}>
@@ -302,7 +308,7 @@ function Products() {
                 i === 0 ? "lg:col-span-2 lg:flex-row" : ""
               }`}
             >
-              <div className={`relative overflow-hidden bg-secondary ${i === 0 ? "lg:w-1/2" : ""}`}>
+              <div className={`relative overflow-hidden bg-white ${i === 0 ? "lg:w-1/2" : ""}`}>
                 <img
                   src={p.img}
                   alt={`${p.name} — peça agrícola fabricada pela Boa Safra`}
@@ -310,7 +316,7 @@ function Products() {
                   decoding="async"
                   width={1024}
                   height={1024}
-                  className={`h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 ${
+                  className={`h-full w-full object-contain p-6 transition-transform duration-500 group-hover:scale-105 ${
                     i === 0 ? "aspect-[4/3] lg:aspect-auto" : "aspect-[4/3]"
                   }`}
                 />
