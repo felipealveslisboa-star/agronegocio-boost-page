@@ -77,14 +77,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Boa Safra — Indústria de Peças Agrícolas | Discos, Rosetas, Bicos e Capôs" },
+      {
+        name: "description",
+        content:
+          "Fábrica de peças de reposição para máquinas agrícolas: discos de plantio, rosetas, bicos e capôs. Compatíveis com John Deere, Semeato, Jumil, Horsch, Baldan e Tatu. Orçamento pelo WhatsApp.",
+      },
+      { name: "author", content: "Boa Safra Indústria" },
+      {
+        name: "keywords",
+        content:
+          "peças agrícolas, discos de plantio, rosetas, bicos colheitadeira, capôs colheitadeira, peças John Deere, peças Semeato, peças Jumil, peças Horsch, peças Baldan, peças Tatu, indústria de implementos agrícolas, peças para plantadeiras",
+      },
+      { property: "og:title", content: "Boa Safra — Peças Agrícolas de Alta Performance" },
+      {
+        property: "og:description",
+        content:
+          "Peças de reposição com qualidade industrial para plantadeiras e colheitadeiras. Entrega para todo o Brasil e América do Sul.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Boa Safra Indústria" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "theme-color", content: "#2E7D32" },
     ],
     links: [
       {
@@ -92,6 +106,33 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800;900&display=swap",
+      },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Boa Safra Indústria de Implementos Agrícolas",
+          url: "/",
+          telephone: "+55-45-3223-0013",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "BR-467, KM 07 – Bairro São Cristóvão",
+            addressLocality: "Cascavel",
+            addressRegion: "PR",
+            postalCode: "85813-180",
+            addressCountry: "BR",
+          },
+          areaServed: ["BR", "AR", "PY", "BO"],
+        }),
+      },
     ],
   }),
   shellComponent: RootShell,
