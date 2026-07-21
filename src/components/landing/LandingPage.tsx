@@ -127,9 +127,9 @@ function Header() {
           <img
             src={logoImg}
             alt="Boa Safra Indústria"
-            width={160}
-            height={48}
-            className="h-10 w-auto sm:h-11"
+            width={210}
+            height={88}
+            className="h-20 w-auto sm:h-20"
           />
         </a>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Menu principal">
@@ -176,6 +176,15 @@ function Hero() {
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
       <div className="absolute inset-0 -z-10 hero-overlay" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center -translate-y-95">
+        <img
+          src={logoImg}
+          alt="Logo Boa Safra"
+          width={240}
+          height={240}
+          className="w-[200px] h-auto max-w-full object-contain rounded-none border-0 bg-transparent shadow-none sm:w-[220px] lg:w-[240px]"
+        />
+      </div>
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-24 sm:px-6 sm:py-32 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:gap-16 lg:px-8 lg:py-40">
         <div className="max-w-2xl text-white">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-white backdrop-blur">
