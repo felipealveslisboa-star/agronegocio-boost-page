@@ -44,22 +44,22 @@ const products = [
   {
     name: "Discos de Plantio",
     img: discosImg,
-    desc: "Fabricados em aço de alta resistência, com precisão dimensional para corte uniforme e maior durabilidade no campo.",
+    desc: "Desenvolvidos com materiais de alta performance, garantindo precisão e longa vida útil no campo.",
   },
   {
     name: "Rosetas",
     img: rosetasImg,
-    desc: "Rosetas robustas para plantadeiras, garantindo penetração eficiente no solo e semeadura de qualidade.",
+    desc: "Rosetas de alta precisão para um plantio mais eficiente e uniforme.",
   },
   {
     name: "Bicos para Colheitadeiras",
     img: bicosImg,
-    desc: "Bicos usinados com acabamento superior, compatíveis com as principais colheitadeiras do mercado.",
+    desc: "Bicos desenvolvidos para enfrentar as condições mais exigentes da colheita.",
   },
   {
     name: "Capô para Colheitadeiras",
     img: caposImg,
-    desc: "Capôs resistentes com pintura industrial, projetados para longa vida útil mesmo em condições severas.",
+    desc: "Capôs resistentes que combinam qualidade, precisão e excelente acabamento.",
   },
   {
     name: "Outras Peças",
