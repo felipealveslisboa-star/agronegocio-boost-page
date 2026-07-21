@@ -342,6 +342,33 @@ function Products() {
   );
 }
 
+function InstitutionalVideo() {
+  return (
+    <section id="institucional" className="bg-background py-24 sm:py-28 lg:py-32">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <SectionHeading
+          align="center"
+          eyebrow="Institucional"
+          title="Conheça a Boa Safra"
+          desc="Veja de perto nossa estrutura, nossos processos e o compromisso com a qualidade que faz da Boa Safra uma referência em peças para implementos agrícolas."
+        />
+        <div className="mt-12 overflow-hidden rounded-2xl shadow-soft">
+          <div className="relative aspect-video w-full">
+            <iframe
+              src="https://www.youtube.com/embed/JjO9Kb6Vcfc?autoplay=0&rel=0"
+              title="Vídeo institucional Boa Safra Indústria de Implementos Agrícolas"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              loading="lazy"
+              className="absolute inset-0 h-full w-full border-0"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Differentials() {
   return (
     <section id="diferenciais" className="bg-background py-24 sm:py-28">
