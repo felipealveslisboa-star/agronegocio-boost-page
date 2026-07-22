@@ -176,13 +176,13 @@ function Hero() {
         className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
       <div className="absolute inset-0 -z-10 hero-overlay" aria-hidden />
-      <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center -translate-y-95">
+      <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center lg:-translate-y-95">
         <img
           src={logoImg}
           alt="Logo Boa Safra"
           width={240}
           height={240}
-          className="w-[200px] h-auto max-w-full object-contain rounded-none border-0 bg-transparent shadow-none sm:w-[220px] lg:w-[240px]"
+          className="w-[160px] sm:w-[180px] md:w-[220px] lg:w-[240px] h-auto max-w-full object-contain rounded-none border-0 bg-transparent shadow-none"
         />
       </div>
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-24 sm:px-6 sm:py-32 lg:grid-cols-[1.15fr_1fr] lg:items-center lg:gap-16 lg:px-8 lg:py-40">
